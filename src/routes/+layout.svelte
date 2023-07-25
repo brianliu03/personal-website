@@ -6,7 +6,37 @@
 	// Most of your app wide CSS should be put in this file
 	import '../app.postcss';
 
+  import {
+    AppBar,
+    AppShell
+  } from '@skeletonlabs/skeleton';
+
+
+import type { ComponentEvents } from 'svelte';
+
+function scrollHandler(event: ComponentEvents<AppShell>['scroll']) {
+	console.log(event.currentTarget.scrollTop);
+}
+
   
 </script>
 
-<slot />
+
+<AppShell ... on:scroll={scrollHandler}>
+	<!-- (header) -->
+	<!-- (sidebarLeft) -->
+	<!-- (sidebarRight) -->
+	<svelte:fragment slot="pageHeader">
+    <AppShell regionPage="relative" slotPageHeader="sticky top-0 z-10">
+      <svelte:fragment slot="pageHeader">
+        <AppBar>Skeleton</AppBar>
+      </svelte:fragment>
+      <!-- ... -->
+    </AppShell>
+  </svelte:fragment>
+	<!-- Router Slot -->
+	<slot />
+	<!-- ---- / ---- -->
+	<svelte:fragment slot="pageFooter">Page Footer</svelte:fragment>
+	<!-- (footer) -->
+</AppShell>

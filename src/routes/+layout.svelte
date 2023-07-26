@@ -46,14 +46,11 @@ function scrollHandler(event: ComponentEvents<AppShell>['scroll']) {
               <a href="/projects" title="Projects">
                 Projects
               </a>
-              <a href="https://github.com/brianliu03" title="Github">
-                Github
+              <a class="btn-icon btn-icon-sm hover:variant-soft-primary" href="https://github.com/brianliu03" title="Github" target="_blank">
+                <i class="fa-brands fa-github text-lg" />
               </a>
-              <a class="btn-icon btn-icon-sm hover:variant-soft-primary" href="https://discord.gg/EXqV7W8MtY" target="_blank" rel="noreferrer">
-                <i class="fa-brands fa-discord" />
-              </a>
-              <a href="https://www.linkedin.com/in/brianliu03/" title="LinkedIn">
-                LinkedIn
+              <a class="btn-icon btn-icon-sm hover:variant-soft-primary" href="https://www.linkedin.com/in/brianliu03/" title="LinkedIn" target="_blank">
+                <i class="fa-brands fa-linkedin text-lg" />
               </a>
           </svelte:fragment>
         </AppBar>

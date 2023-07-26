@@ -2,14 +2,18 @@
 <html lang="en" class="dark">
 	<head>
 		<meta charset="utf-8" />
+
 		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
+
 		<meta name="viewport" content="width=device-width" />
 		%sveltekit.head%
 	</head>
-	<body data-sveltekit-preload-data="hover" data-theme="skeleton">
+
+  <link href="/font-awesome/css/fontawesome.css" rel="stylesheet">
+  <link href="/font-awesome/css/brands.css" rel="stylesheet">
+  <link href="/font-awesome/css/solid.css" rel="stylesheet">
+
+	<body class="h-full overflow-hidden" data-sveltekit-preload-data="hover" data-theme="skeleton">
 		<div style="display: contents">%sveltekit.body%</div>
 	</body>
-  <body>
-    <div style="display: contents" class="h-full overflow-hidden">%sveltekit.body%</div>
-  </body>
 </html>

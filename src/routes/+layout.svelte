@@ -22,14 +22,19 @@ function scrollHandler(event: ComponentEvents<AppShell>['scroll']) {
 </script>
 
 
-<AppShell ... on:scroll={scrollHandler}>
+<AppShell ... on:scroll={scrollHandler}> 
 	<!-- (header) -->
 	<!-- (sidebarLeft) -->
 	<!-- (sidebarRight) -->
 	<svelte:fragment slot="pageHeader">
     <AppShell regionPage="relative" slotPageHeader="sticky top-0 z-10">
       <svelte:fragment slot="pageHeader">
-        <AppBar>Skeleton</AppBar>
+        
+        <AppBar>
+          <svelte:fragment slot="lead">Title</svelte:fragment>
+          <svelte:fragment slot="trail">Trail</svelte:fragment>
+        </AppBar>
+
       </svelte:fragment>
       <!-- ... -->
     </AppShell>

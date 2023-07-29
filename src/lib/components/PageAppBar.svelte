@@ -15,7 +15,7 @@
           </svelte:fragment>
           <svelte:fragment slot="trail">
             <div class="flex items-center space-x-4">
-              <a href="/about" title="About">
+              <a href="/#about" title="About">
                 About
               </a>
               <a href="/projects" title="Projects">

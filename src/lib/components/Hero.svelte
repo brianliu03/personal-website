@@ -2,7 +2,8 @@
 	import { Avatar } from "@skeletonlabs/skeleton";
 
   export let title = "Welcome, my name is Brian.";
-  export let subtitle = "I'm a visiting student at the University of Oxford and interested in technology for human good.";
+  // export let subtitle = "I'm a visiting student at the University of Oxford and interested in technology for human good.";
+  export let subtitle = "Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder";
   export let imageSrc = "https://via.placeholder.com/150";
 </script>
 

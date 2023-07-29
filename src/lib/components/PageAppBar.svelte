@@ -1,18 +1,8 @@
 <script lang='ts'>
-  
   import {
     AppBar,
     AppShell
   } from '@skeletonlabs/skeleton';
-
-
-import type { ComponentEvents } from 'svelte';
-
-function scrollHandler(event: ComponentEvents<AppShell>['scroll']) {
-	console.log(event.currentTarget.scrollTop);
-}
-
-  
 </script>
 
 <AppShell regionPage="relative" slotPageHeader="sticky top-0 z-10">
@@ -24,7 +14,6 @@ function scrollHandler(event: ComponentEvents<AppShell>['scroll']) {
             </a>
           </svelte:fragment>
           <svelte:fragment slot="trail">
-            <!-- below but now with about, projects, github, linkedin-->
             <div class="flex items-center space-x-4">
               <a href="/about" title="About">
                 About

@@ -1,5 +1,5 @@
 <script lang='ts'>
-  import PageAppBar from '../lib/components/PageAppBar.svelte';
+  import PageAppBar from '$lib/components/PageAppBar.svelte';
 
 	// The ordering of these imports is critical to your app working properly
 	import '@skeletonlabs/skeleton/themes/theme-skeleton.css';
@@ -35,9 +35,9 @@ function scrollHandler(event: ComponentEvents<AppShell>['scroll']) {
   </svelte:fragment>
 
 	<!-- Router Slot -->
-	<div class="container p-10 mx-auto">
-    <slot />
-  </div>
+  
+  <slot />
+
 	<!-- ---- / ---- -->
 	<svelte:fragment slot="pageFooter">Page Footer</svelte:fragment>
 	<!-- (footer) -->

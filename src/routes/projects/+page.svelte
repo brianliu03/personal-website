@@ -2,7 +2,7 @@
 </script>
 
 <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-  <div class="card hover:shadow-lg overflow-auto">
+  <div class="card card-hover overflow-hidden">
     <header>
       <img src="https://picsum.photos/seed/picsum/200/300" alt="Placeholder" />
     </header>
@@ -13,7 +13,7 @@
       </article>
     </div>
   </div>
-  <div class="card hover:shadow-lg overflow-auto">
+  <div class="card card-hover overflow-hidden">
     <header>
       <img src="https://picsum.photos/seed/picsum/200/300" alt="Placeholder" />
     </header>
@@ -24,7 +24,7 @@
       </article>
     </div>
   </div>
-  <div class="card hover:shadow-lg overflow-auto">
+  <div class="card card-hover overflow-hidden">
     <header>
       <img src="https://picsum.photos/seed/picsum/200/300" alt="Placeholder" />
     </header>

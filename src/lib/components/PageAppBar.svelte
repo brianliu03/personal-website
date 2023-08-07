@@ -21,6 +21,9 @@
               <a class="btn hover:variant-soft-primary" href="/projects" title="Projects">
                 Projects
               </a>
+              <a class="btn hover:variant-soft-primary" href="/music" title="Music">
+                Music
+              </a>
             </div>
             <div class="flex items-center space-x-6 text-primary-300">
               <a class="btn-icon btn-icon-sm hover:variant-soft-primary" href="https://github.com/brianliu03" title="Github" target="_blank">

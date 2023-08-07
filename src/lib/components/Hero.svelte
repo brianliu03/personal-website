@@ -14,8 +14,8 @@
   });
 </script>
 
-<div class="flex-row h-4/5">
-  <div class="flex items-center mx-20 py-40 space-x-20">
+<div class="flex-row">
+  <div class="flex items-center lg:mx-20 md:mx-10 sm:mx-5 lg:py-40 md:py-20 sm:py-10 lg:space-x-20 md:space-x-10 sm:space-x-5">
     <div class="flex-1">
       {#if visible}
         <h1 class="h2 mb-4" transition:fly="{{ y: 20, duration: 500 }}">
@@ -23,7 +23,7 @@
         </h1>
       {/if}
       {#if visible}
-        <h2 class="h4" transition:fly="{{ y: 250, duration: 1000, delay: 500 }}">
+        <h2 class="h4 lg:mt-10" transition:fly="{{ y: 250, duration: 1000, delay: 500 }}">
           {subtitle}
         </h2>
       {/if}
@@ -32,9 +32,29 @@
       <img src={imageSrc} class="w-48 h-48 object-cover rounded-3xl" alt="Avatar" transition:fly="{{ y: -250, duration: 1000, delay: 1250 }}"/>
     {/if}
   </div>
-  <div class="flex justify-center">
-    <a class="btn hover:variant-soft-primary flex-col" href="/#about" style="cursor: pointer;" transition:fade="{{duration: 1000}}">
-      <i class="fa-solid fa-chevron-down text-2xl" />
-    </a>
-  </div>
+  <footer class="flex justify-center lg:mt-60 md:mt-10 sm:mt-5 sticky bottom-0">
+    {#if visible}
+      <a class="btn hover:variant-soft-primary flex-col down-arrow" href="/#about" style="cursor: pointer;" transition:fly="{{ y: -500, duration: 1000, delay: 750 }}">
+        <i class="fa-solid fa-chevron-down text-2xl" />
+      </a>
+    {/if}
+    </footer>
 </div>
+
+<style>
+  .down-arrow {
+    animation: bounce 2s infinite;
+  }
+
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+</style>

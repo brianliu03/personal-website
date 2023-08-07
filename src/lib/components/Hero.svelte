@@ -1,5 +1,4 @@
 <script>
-  import { Avatar } from "@skeletonlabs/skeleton";
   import { fade, fly } from "svelte/transition";
   import { onMount } from "svelte";
 
@@ -18,15 +17,17 @@
 <div class="flex items-center mx-20 space-x-20 h-screen">
   <div class="flex-1">
     {#if visible}
-      <h1 class="h2 mb-4" transition:fly="{{ y: -200, duration: 1000 }}">
+      <h1 class="h2 mb-4" transition:fly="{{ y: 20, duration: 500 }}">
         {title}
       </h1>
     {/if}
     {#if visible}
-      <h2 class="h4" transition:fly="{{ y: 200, duration: 1000 }}">
+      <h2 class="h4" transition:fly="{{ y: 250, duration: 1000, delay: 500 }}">
         {subtitle}
       </h2>
     {/if}
   </div>
-  <Avatar src={imageSrc} width="w-48" rounded="rounded-3xl"/>
+  {#if visible}
+    <img src={imageSrc} class="w-48 h-48 object-cover rounded-3xl" alt="Avatar" transition:fly="{{ y: -250, duration: 1000, delay: 1250 }}"/>
+  {/if}
 </div>

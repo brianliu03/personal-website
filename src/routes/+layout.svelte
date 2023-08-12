@@ -1,5 +1,6 @@
 <script lang='ts'>
   import PageAppBar from '$lib/components/PageAppBar.svelte';
+  import PageFooter from '$lib/components/PageFooter.svelte';
 
 
 // Your custom Skeleton theme:
@@ -37,6 +38,8 @@ function scrollHandler(event: ComponentEvents<AppShell>['scroll']) {
   <slot />
 
 	<!-- ---- / ---- -->
-	<svelte:fragment slot="pageFooter">Page Footer</svelte:fragment>
+	<svelte:fragment slot="pageFooter">
+    <PageFooter></PageFooter>
+  </svelte:fragment>
 	<!-- (footer) -->
 </AppShell>

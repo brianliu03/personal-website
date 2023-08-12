@@ -14,7 +14,7 @@
 
 <div class="flex flex-col items-center px-20 bg-secondary-200 text-surface-700" id="about">
   <h1 class="h2 font-semibold mt-20">{title}</h1>
-  <hr class="w-3/4 border-2 border-primary-500 mt-3">
+  <hr class="w-3/4 !border-2 border-primary-500 mt-3">
   <p class="h5 mx-15 my-5">{intro}</p>
   <div class="flex flex-row justify-center items-center w-full">
     <div class="flex flex-col justify-center items-center w-1/2">

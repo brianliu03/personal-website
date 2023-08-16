@@ -2,12 +2,17 @@
   import PageAppBar from '$lib/components/PageAppBar.svelte';
   import PageFooter from '$lib/components/PageFooter.svelte';
 
-import '../app.postcss';
+  import '../app.postcss';
 
   import { AppShell } from '@skeletonlabs/skeleton';
 
+  import { computePosition, autoUpdate, offset, shift, flip, arrow } from '@floating-ui/dom';
 
-import type { ComponentEvents } from 'svelte';
+
+  import { storePopup } from '@skeletonlabs/skeleton';
+  storePopup.set({ computePosition, autoUpdate, offset, shift, flip, arrow });
+
+  import type { ComponentEvents } from 'svelte';
 
 function scrollHandler(event: ComponentEvents<AppShell>['scroll']) {
 	console.log(event.currentTarget.scrollTop);

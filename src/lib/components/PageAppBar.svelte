@@ -1,7 +1,8 @@
 <script lang='ts'>
   import {
     AppBar,
-    AppShell
+    AppShell,
+    popup
   } from '@skeletonlabs/skeleton';
 </script>
 
@@ -18,6 +19,30 @@
               <a class="btn hover:variant-soft-primary" href="/#about" title="About">
                 About
               </a>
+              <!-- Projects dropdown -->
+              <button class="btn hover:variant-soft-primary" use:popup={{ event: 'click', target: 'features'}}>
+                <span>Projects</span>
+                <i class="fa-solid fa-caret-down opacity-50" />
+              </button>
+              <!-- Projects pop up -->
+              <div class="card variant-glass-tertiary p-4 w-60" data-popup="features">
+                arstarstarsstarst
+                <nav class="list-nav">
+                  <ul>
+                    <li>
+                      <a href="/projects" title="Housing SF">
+                        Housing SF
+                      </a>
+                    </li>
+                    <li>
+                      <a class="nav-link" href="/music" title="FractMuse">
+                        FractMuse
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+                <div class="arrow bg-primary-500" />
+              </div>
               <a class="btn hover:variant-soft-primary" href="/projects" title="Projects">
                 Projects
               </a>
@@ -38,4 +63,3 @@
       </svelte:fragment>
       <!-- ... -->
     </AppShell>
-

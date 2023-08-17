@@ -28,12 +28,12 @@
         <nav class="list-nav">
           <ul>
             <li>
-              <a href="/projects" title="Housing SF">
-                Housing SF
+              <a href="/housingsf" title="Housing SF">
+                Housing in San Francisco
               </a>
             </li>
             <li>
-              <a class="nav-link" href="/music" title="FractMuse">
+              <a class="nav-link" href="/fractmuse" title="FractMuse">
                 FractMuse
               </a>
             </li>
@@ -41,9 +41,6 @@
         </nav>
         <div class="arrow bg-primary-500" />
       </div>
-      <a class="btn hover:variant-soft-primary" href="/projects" title="Projects">
-        Projects
-      </a>
       <a class="btn hover:variant-soft-primary" href="/music" title="Music">
         Music
       </a>

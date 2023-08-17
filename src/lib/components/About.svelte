@@ -13,22 +13,33 @@
 </script>
 
 <div class="flex flex-col items-center px-20 bg-secondary-200 text-surface-700" id="about">
-  <h1 class="h2 font-semibold mt-20">{title}</h1>
-  <hr class="w-3/4 !border-2 border-primary-500 mt-3">
+  <div class="flex flex-col items-center w-full">
+    <h1 class="h2 font-semibold mt-20">{title}</h1>
+    <hr class="w-3/4 !border-2 border-primary-500 mt-3">
+  </div>
   <p class="h5 mx-15 my-5">{intro}</p>
-  <div class="flex flex-row justify-center items-center w-full">
-    <div class="flex flex-col justify-center items-center w-1/2">
+  <div class="flex flex-row justify-between w-full"> <!-- Use justify-between for even spacing -->
+    <div class="flex flex-col items-center w-1/2">
       <h2 class="h3 font-semibold mt-10">{titCuriousity}</h2>
       <p class="h5 mx-15 my-5">{subCuriousity}</p>
+    </div>
+    <div class="flex flex-col items-center w-1/2">
+      <h2 class="h3 font-semibold mt-10">{titDesign}</h2>
+      <p class="h5 mx-15 my-5">{subDesign}</p>
+    </div>
+  </div>
+  <div class="flex flex-row justify-between w-full"> <!-- Use justify-between for even spacing -->
+    <div class="flex flex-col items-center w-1/2">
       <h2 class="h3 font-semibold mt-10">{titConnect}</h2>
       <p class="h5 mx-15 my-5">{subConnect}</p>
     </div>
-    <div class="flex flex-col justify-center items-center w-1/2">
-      <h2 class="h3 font-semibold mt-10">{titDesign}</h2>
-      <p class="h5 mx-15 my-5">{subDesign}</p>
+    <div class="flex flex-col items-center w-1/2">
       <h2 class="h3 font-semibold mt-10">{titExtra}</h2>
       <p class="h5 mx-15 my-5">{subExtra}</p>
     </div>
   </div>
   <p class="h5 mx-15 my-5">{bye}</p>
 </div>
+
+
+

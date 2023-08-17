@@ -28,7 +28,7 @@
         <nav class="list-nav">
           <ul>
             <li>
-              <a href="/housingsf" title="Housing SF">
+              <a href="/housing" title="Housing SF">
                 Housing in San Francisco
               </a>
             </li>

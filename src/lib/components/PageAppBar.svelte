@@ -24,7 +24,7 @@
         <i class="fa-solid fa-caret-down opacity-50" />
       </button>
       <!-- Projects pop up -->
-      <div class="card w-60" data-popup="features">
+      <div class="card variant-glass-tertiary w-60" data-popup="features">
         <nav class="list-nav">
           <ul>
             <li>
@@ -39,7 +39,7 @@
             </li>
           </ul>
         </nav>
-        <div class="arrow bg-primary-500" />
+        <div class="arrow variant-glass-tertiary" />
       </div>
       <a class="btn hover:variant-soft-primary" href="/music" title="Music">
         Music

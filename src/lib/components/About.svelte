@@ -12,7 +12,7 @@
   export let bye = "Thank you for stopping by, feel free to connect with me!";
 </script>
 
-<div class="flex flex-col items-center px-20 bg-secondary-200 text-surface-700" id="about">
+<div class="flex flex-col items-center px-20 bg-secondary-300 text-surface-700" id="about">
   <div class="flex flex-col items-center w-full">
     <h1 class="h2 font-semibold mt-20">{title}</h1>
     <hr class="w-3/4 !border-2 border-primary-500 mt-3">

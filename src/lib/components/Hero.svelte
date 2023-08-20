@@ -4,7 +4,7 @@
 
   export let title = "Welcome, my name is Brian.";
   export let subtitle = "I am a visiting student at the University of Oxford and I believe in technology for the human good.";
-  export let imageSrc = "https://via.placeholder.com/150";
+  export let imageSrc = "/images/hero_portrait.jpg";
 
   let visible = false;
 

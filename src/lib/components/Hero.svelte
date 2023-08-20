@@ -29,7 +29,7 @@
       {/if}
     </div>
     {#if visible}
-      <img src={imageSrc} class="w-48 h-48 object-cover rounded-3xl" alt="Avatar" in:fly="{{ y: -250, duration: 1000, delay: 1250 }}"/>
+      <img src={imageSrc} class="w-72 h-72 object-cover rounded-3xl" alt="Avatar" in:fly="{{ y: -250, duration: 1000, delay: 1250 }}"/>
     {/if}
   </div>
   <footer class="flex justify-center lg:mt-60 md:mt-10 sm:mt-5 sticky bottom-0">

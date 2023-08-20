@@ -18,7 +18,7 @@
     <hr class="w-3/4 !border-2 border-primary-500 mt-3">
   </div>
   <p class="h5 mx-15 my-5">{intro}</p>
-  <div class="flex flex-row justify-between w-full"> <!-- Use justify-between for even spacing -->
+  <div class="flex flex-row justify-between space-x-10 w-full">
     <div class="flex flex-col items-center w-1/2">
       <h2 class="h3 font-semibold mt-10">{titCuriousity}</h2>
       <p class="h5 mx-15 my-5">{subCuriousity}</p>
@@ -28,7 +28,7 @@
       <p class="h5 mx-15 my-5">{subDesign}</p>
     </div>
   </div>
-  <div class="flex flex-row justify-between w-full"> <!-- Use justify-between for even spacing -->
+  <div class="flex flex-row justify-between space-x-10 w-full">
     <div class="flex flex-col items-center w-1/2">
       <h2 class="h3 font-semibold mt-10">{titConnect}</h2>
       <p class="h5 mx-15 my-5">{subConnect}</p>

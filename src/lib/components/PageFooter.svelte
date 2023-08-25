@@ -22,10 +22,10 @@
           <svelte:fragment slot="trail">
             <div class="flex text-md items-center space-x-8">
               <p>Connect with me:</p>
-              <a class="text-primary-500" href="mailto: brianliu03@gmail.com" title="Email" target="_blank">
+              <a class="text-primary-500" href="mailto: brianliu03@gmail.com" target="_blank">
                 Email
               </a>
-              <a class="text-primary-500" href="https://www.linkedin.com/in/brianliu03/" title="LinkedIn" target="_blank">
+              <a class="text-primary-500" href="https://www.linkedin.com/in/brianliu03/" target="_blank">
                 LinkedIn
               </a>
             </div>

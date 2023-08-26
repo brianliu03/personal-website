@@ -10,9 +10,14 @@
   export let titConnect = "Communication and Connections";
   export let subConnect = "I find immense fulfillment in fostering human connections and prioritizing effective communication. As an algorithms learning assistant during my time at Bowdoin College, I not only enjoyed helping others navigate the intricacies of the subject but also cherished the shared sense of growth and understanding.";
   export let titExtra = "Away from Computers";
-  export let subExtra = "My lifelong commitment to piano and music has been a source of creativity and joy. I've had the privilege of performing and receiving top prizes in competitions, and I continue to dedicate time everyday for music. As a challenge, I am preparing repertoire for international competitions. I also love the outdoors. Running and mountain biking are two ways I explore nearby mountains and forests.";
+  export let subExtra = "Piano and music are sources of creativity and joy for me, and I dedicate time everyday for music. I am challenging myself to prepare for at least one international competition. I also love the outdoors. Running and mountain biking are two ways I explore nearby mountains and forests.";
   export let bye = "Thank you for stopping by, feel free to connect with me!";
+
   export let imgAcadia = "/images/acadia.jpg";
+  export let imgMtb = "/images/mtb.JPG";
+  export let svgThink = "/svg/think.svg";
+  export let svgDesign = "/svg/design.svg";
+  export let svgCollab = "/svg/collab.svg";
 </script>
 
 <div class="flex flex-col items-center px-20 bg-secondary-300 text-surface-700" id="about">
@@ -28,20 +33,24 @@
     <div class="flex flex-col items-center w-1/2">
       <h2 class="h3 font-semibold mt-10">{titCuriousity}</h2>
       <p class="h5 mx-15 my-5">{subCuriousity}</p>
+      <img src={svgThink} class="w-1/2" alt="Avatar" />
     </div>
     <div class="flex flex-col items-center w-1/2">
       <h2 class="h3 font-semibold mt-10">{titDesign}</h2>
       <p class="h5 mx-15 my-5">{subDesign}</p>
+      <img src={svgDesign} class="w-1/2" alt="Avatar" />
     </div>
   </div>
   <div class="flex flex-row justify-between space-x-10 w-full">
     <div class="flex flex-col items-center w-1/2">
       <h2 class="h3 font-semibold mt-10">{titConnect}</h2>
       <p class="h5 mx-15 my-5">{subConnect}</p>
+      <img src={svgCollab} class="w-1/2" alt="Avatar" />
     </div>
     <div class="flex flex-col items-center w-1/2">
       <h2 class="h3 font-semibold mt-10">{titExtra}</h2>
       <p class="h5 mx-15 my-5">{subExtra}</p>
+      <img src={imgMtb} class="w-1/2 rounded-3xl" alt="Avatar" />
     </div>
   </div>
   <p class="h5 mx-15 my-5">{bye}</p>

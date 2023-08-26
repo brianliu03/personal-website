@@ -15,43 +15,57 @@
 
   export let imgAcadia = "/images/acadia.jpg";
   export let imgMtb = "/images/mtb.JPG";
+  export let svgHello = "/svg/hello.svg";
   export let svgThink = "/svg/think.svg";
   export let svgDesign = "/svg/design.svg";
   export let svgCollab = "/svg/collab.svg";
 </script>
 
 <div class="flex flex-col items-center px-20 bg-secondary-300 text-surface-700" id="about">
-  <div class="flex flex-col md:flex-row items-center w-full mt-5">
-    <div class="flex flex-col mr-5">
-      <h1 class="h2 font-semibold mt-20">{title}</h1>
-      <hr class="w-5/6 !border-2 border-primary-500 mt-3">
-      <p class="h5 mx-15 my-5">{intro}</p>
+
+  <div class="flex flex-col justify-between w-full">
+
+    <div class="flex flex-row w-full mt-10 lg:mt-20">
+      <img src={svgHello} class="w-48 lg:w-1/3" alt="Avatar" /> 
+      <div class="flex flex-col w-5/6">
+        <h1 class="h2 font-semibold">{title}</h1>
+        <hr class="w-full !border-2 border-primary-500 mt-3">
+        <p class="h5 mx-15 my-5">{intro}</p>
+      </div>
     </div>
-    <img src={imgAcadia} class="md:w-60 rounded-3xl mt-5 sm:w-1/2" alt="Avatar" /> 
-  </div>
-  <div class="flex flex-row justify-between space-x-10 w-full">
-    <div class="flex flex-col items-center w-1/2">
-      <h2 class="h3 font-semibold mt-10">{titCuriousity}</h2>
-      <p class="h5 mx-15 my-5">{subCuriousity}</p>
-      <img src={svgThink} class="w-1/2" alt="Avatar" />
+
+    <div class="flex flex-row items-center w-full">
+      <div class="flex flex-col items-center w-2/3">
+        <h2 class="h3 font-semibold mt-10">{titCuriousity}</h2>
+        <p class="h5 mx-15 my-5">{subCuriousity}</p>
+      </div>
+      <img src={svgThink} class="w-48 lg:w-1/3" alt="Avatar" />
     </div>
-    <div class="flex flex-col items-center w-1/2">
-      <h2 class="h3 font-semibold mt-10">{titDesign}</h2>
-      <p class="h5 mx-15 my-5">{subDesign}</p>
-      <img src={svgDesign} class="w-1/2" alt="Avatar" />
+
+    <div class="flex flex-row items-center w-full">
+      <img src={svgDesign} class="w-48 lg:w-1/3 mr-5" alt="Avatar" />
+      <div class="flex flex-col items-center w-2/3">
+        <h2 class="h3 font-semibold mt-10">{titDesign}</h2>
+        <p class="h5 mx-15 my-5">{subDesign}</p>
+      </div>
     </div>
-  </div>
-  <div class="flex flex-row justify-between space-x-10 w-full">
-    <div class="flex flex-col items-center w-1/2">
-      <h2 class="h3 font-semibold mt-10">{titConnect}</h2>
-      <p class="h5 mx-15 my-5">{subConnect}</p>
-      <img src={svgCollab} class="w-1/2" alt="Avatar" />
+
+    <div class="flex flex-row items-center w-full">
+      <div class="flex flex-col items-center w-2/3">
+        <h2 class="h3 font-semibold mt-10">{titConnect}</h2>
+        <p class="h5 mx-15 my-5">{subConnect}</p>
+      </div>
+      <img src={svgCollab} class="w-48 lg:w-1/3" alt="Avatar" />
     </div>
-    <div class="flex flex-col items-center w-1/2">
-      <h2 class="h3 font-semibold mt-10">{titExtra}</h2>
-      <p class="h5 mx-15 my-5">{subExtra}</p>
-      <img src={imgMtb} class="w-1/2 rounded-3xl" alt="Avatar" />
+
+    <div class="flex flex-row items-center w-full">
+      <img src={imgMtb} class="w-48 lg:w-1/3 mr-5" alt="Avatar" />
+      <div class="flex flex-col items-center w-2/3">
+        <h2 class="h3 font-semibold mt-10">{titExtra}</h2>
+        <p class="h5 mx-15 my-5">{subExtra}</p>
+      </div>
     </div>
+
   </div>
   <p class="h5 mx-15 my-5">{bye}</p>
 </div>

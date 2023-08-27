@@ -3,7 +3,14 @@
   import { fade, fly } from 'svelte/transition';
   import type { PageData } from './$types';
   
-  export let title = "Crossroads of a Crisis: Housing in San Francisco"
+  export let title = "Crossroads of a Crisis: Housing in San Francisco";
+  export let imgGroup = "/images/groupsf.JPG";
+  export let about = "Over the course of Summer and Fall 2022, my friend and I were sponsored by the McKeen Center in Bowdoin to create a holistic, seminar-based learning experience on the housing crisis next Spring. We brought on ten other students, held seven weekly seminars, and traveled to San Francisco for a week to work with community partners supporting unhoused people. You can view some of our material used here.";
+  export let refLessonPlan = "https://drive.google.com/file/d/1PLjTq_dkpDOC80AwlggnveaQC25Tux-_/view?usp=sharing";
+  export let titStats = "Eviction Notices and Data Analysis";
+  export let gifEvictions = "/images/evictionsf.gif";
+  export let aboutStats = "After the trip, I became interested in exploring eviction data and decided to start a statistics project to help explain historical events and how landlords can play a “game” of eviction strategies based on the housing market. I presented my first analysis and findings in May 2023, and am currently diving deeper into modeling and incorporating financial data.";
+  
 
   let visible = false;
 
@@ -13,14 +20,23 @@
   });
 </script>
 
-<div class="flex-row">
-  <div class="flex items-center">
-    <div class="flex-1">
-      {#if visible}
-        <h1 class="h2 mb-4" in:fly="{{ y: 20, duration: 500 }}">
-          {title}
-        </h1>
-      {/if}
+<div class="flex flex-col items-center px-20" id="about">
+
+  <div class="flex flex-col justify-between w-full">
+
+    <div class="flex flex-row w-full mt-10 space-x-10">
+      <div class="flex flex-col w-1/2">
+        <h1 class="h2 font-semibold">{title}</h1>
+        <hr class="w-full !border-2 border-primary-500 mt-3">
+        <p class="h5 mx-15 my-5">{about}</p>
+      </div>
+      <img src={imgGroup} class="w-1/2 object-scale-down" alt="Avatar" /> 
+    </div>
+
+    <div class="flex flex-col items-center w-full">
+      <h2 class="h3 font-semibold mt-10">{titStats}</h2>
+      <p class="h5 mx-15 my-5">{aboutStats}</p>
+      <img src={gifEvictions} class="w-1/3 object-scale-down" alt="Avatar" />
     </div>
   </div>
 </div>

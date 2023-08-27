@@ -15,6 +15,10 @@
   export let liszt = "https://www.youtube.com/embed/__IhWPT8Qck";
   // https://youtu.be/GElOjxKvlhw?si=JYIZdgl6Ps4XKFr1
   export let haydn = "https://www.youtube.com/embed/GElOjxKvlhw";
+  // https://youtu.be/A8OE_HB2k5E?si=yaNnbL3aP3BJYbyI
+  export let scriabin = "https://www.youtube.com/embed/A8OE_HB2k5E";
+  // https://youtu.be/r0UCxMTCkP0?si=h61gaCY3pvERTrDM
+  export let chopin = "https://www.youtube.com/embed/r0UCxMTCkP0";
 
 
   let visible = false;
@@ -33,29 +37,33 @@
       </h1>
     {/if}
     {#if visible}
-      <h2 class="h4 mt-10 mx-20" in:fly="{{ y: 250, duration: 1000, delay: 250 }}">
+      <h2 class="h4 my-10 mx-20" in:fly="{{ y: 250, duration: 1000, delay: 250 }}">
         {subtitle}
       </h2>
     {/if}
-    <div class="flex flex-col items-center space-y-10">
+    <div class="grid lg:grid-cols-2 gap-4 justify-between mb-10">
       <div class="flex flex-col items-center space-y-2">
-        <iframe width="560" height="315" src={rach3} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" in:fly="{{ y: -250, duration: 1000, delay: 500 }}" allowfullscreen></iframe>
+        <iframe width="496" height="279" src={rach3} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" in:fly="{{ y: -250, duration: 1000, delay: 500 }}" allowfullscreen></iframe>
         <p class="text-md">Rachmaninoff Piano Concerto No. 3 in D minor, Op. 30</p>
       </div>
       <div class="flex flex-col items-center space-y-2">
-        <iframe width="560" height="315" src={cvine} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" in:fly="{{ y: -250, duration: 1000, delay: 500 }}" allowfullscreen></iframe>
-        <p class="text-md">Carl Vine - Sonata No. 1 for Piano</p>
-      </div>
-      <div class="flex flex-col items-center space-y-2">
-        <iframe width="560" height="315" src={rachcello} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" in:fly="{{ y: -250, duration: 1000, delay: 500 }}" allowfullscreen></iframe>
+        <iframe width="496" height="279" src={rachcello} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" in:fly="{{ y: -250, duration: 1000, delay: 500 }}" allowfullscreen></iframe>
         <p class="text-md">Rachmaninoff Cello Sonata in G minor, Op. 19</p>
       </div>
       <div class="flex flex-col items-center space-y-2">
-        <iframe width="560" height="315" src={liszt} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" in:fly="{{ y: -250, duration: 1000, delay: 500 }}" allowfullscreen></iframe>
+        <iframe width="496" height="279" src={liszt} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" in:fly="{{ y: -250, duration: 1000, delay: 500 }}" allowfullscreen></iframe>
         <p class="text-md">Liszt Hungarian Rhapsody no. 12</p>
       </div>
+      <div class="flex flex-col items-center space-y-2">
+        <iframe width="496" height="279" src={cvine} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" in:fly="{{ y: -250, duration: 1000, delay: 500 }}" allowfullscreen></iframe>
+        <p class="text-md">Carl Vine - Sonata No. 1 for Piano</p>
+      </div>
+      <div class="flex flex-col items-center space-y-2">
+        <iframe width="496" height="279" src={scriabin} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" in:fly="{{ y: -250, duration: 1000, delay: 500 }}" allowfullscreen></iframe>
+        <p class="text-md">Scriabin - Etude Op. 8 No. 12</p>
+      </div>
       <div class="flex flex-col items-center space-y 2">
-        <iframe width="560" height="315" src={haydn} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" in:fly="{{ y: -250, duration: 1000, delay: 500 }}" allowfullscreen></iframe>
+        <iframe width="496" height="279" src={haydn} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" in:fly="{{ y: -250, duration: 1000, delay: 500 }}" allowfullscreen></iframe>
         <p class="text-md">Haydn - Piano Sonata in C major, Hob. XVI:50</p>
       </div>
     </div>

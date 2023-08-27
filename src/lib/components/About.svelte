@@ -4,9 +4,9 @@
   export let title = "About me";
   export let intro = "Hello! I'm a student interested in utilizing technology for human good, addressing pressing humanitarian issues, and creating empowering software for all. Outside work, the current housing and climate crises have captured my attention, and I am exploring statistical and computational models to not only chronicle historical events, but also to help uncover potential root causes and solutions.";
   export let titCuriousity = "Curiosity and Exploring Data";
-  export let subCuriousity = "My fascination with data-driven insights led me to play with models and analyze intricate datasets. I recently delved into a research project focused on studying evictions in San Francisco and their correlation with financial data. Unraveling meaningful patterns and uncovering hidden truths from the numbers was both challenging and deeply rewarding.";
+  export let subCuriousity = "My fascination with data-driven insights led me to play with models and analyze intricate datasets. I recently delved into a research project focused on studying evictions in San Francisco and their correlation with financial data. Finding meaningful patterns and hidden truths from the numbers were both challenging and deeply rewarding.";
   export let titDesign = "Design, Build, and Test";
-  export let subDesign = "During my internship, I had the opportunity to create a full-stack chat application for an airline, a project that allowed me to blend my technical skills with a genuine desire to improve user experiences. This experience ignited my passion for building applications that directly impact people's lives positively.";
+  export let subDesign = "During my internship, I had the opportunity to create a full-stack chat application for an airline, a project that allowed me to blend my technical skills with a genuine desire to improve user experiences. These experiences reflect my desire to build applications that directly impact people's lives positively.";
   export let titConnect = "Communication and Connections";
   export let subConnect = "I find immense fulfillment in fostering human connections and prioritizing effective communication. As an algorithms learning assistant during my time at Bowdoin College, I not only enjoyed helping others navigate the intricacies of the subject but also cherished the shared sense of growth and understanding.";
   export let titExtra = "Away from Computers";
@@ -67,7 +67,7 @@
     </div>
 
   </div>
-  <p class="h5 mx-15 my-5">{bye}</p>
+  <p class="h5 mx-15 my-5 mt-20 mb-5">{bye}</p>
 </div>
 
 

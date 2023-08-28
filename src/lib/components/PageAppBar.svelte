@@ -19,12 +19,12 @@
         About
       </a>
       <!-- Projects dropdown -->
-      <button class="btn hover:variant-soft-primary" use:popup={{ event: 'click', target: 'features'}}>
+      <button class="btn shover:variant-soft-primary" use:popup={{ event: 'click', target: 'features'}}>
         <span>Projects</span>
         <i class="fa-solid fa-caret-down opacity-50" />
       </button>
       <!-- Projects pop up -->
-      <div class="card variant-glass-tertiary w-60" data-popup="features">
+      <div class="card p-2 variant-glass-tertiary w-60" data-popup="features">
         <nav class="list-nav">
           <ul>
             <li>

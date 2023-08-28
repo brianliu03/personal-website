@@ -10,7 +10,7 @@
   export let titStats = "Eviction Notices and Data Analysis";
   export let gifEvictions = "/images/evictionsf.gif";
   export let aboutStats = "After the trip, I became interested in exploring eviction data and decided to start a statistics project to help explain historical events and how landlords can play a “game” of eviction strategies based on the housing market. I presented my first analysis and findings in May 2023, and am currently diving deeper into modeling and incorporating financial data.";
-  export let subStats = "I am working on publishing my findings and continuing work, but you can find my past presentation and analysis."
+  export let subStats = "I am working on publishing my findings and continuing work, but here you can find my past presentation and analysis."
 
   let visible = false;
 
@@ -22,7 +22,7 @@
 
 <div class="flex flex-col items-center px-20" id="about">
 
-  <div class="flex flex-col justify-between w-full">
+  <div class="flex flex-col justify-between w-full space-y-20">
 
     <div class="flex flex-row w-full mt-10 space-x-10">
       <div class="flex flex-col w-1/2">
@@ -34,8 +34,8 @@
     </div>
 
     <div class="flex flex-row items-center w-full space-x-10">
-      <img src={gifEvictions} class="w-1/3 mb-10" alt="Avatar" />
-      <div class="flex flex-col items-center w-2/3">
+      <img src={gifEvictions} class="w-1/2 mb-10" alt="Avatar" />
+      <div class="flex flex-col items-center w-1/2">
         <h2 class="h3 font-semibold mt-10">{titStats}</h2>
         <p class="h5 mx-15 my-5">{aboutStats}</p>
       </div>

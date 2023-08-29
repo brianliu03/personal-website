@@ -20,11 +20,11 @@
   });
 </script>
 
-<div class="flex flex-col items-center px-20" id="about">
+<div class="flex flex-col items-center px-20">
 
   <div class="flex flex-col justify-between items-center w-full space-y-20">
 
-    <div class="flex flex-row w-full mt-10 space-x-10">
+    <div class="flex flex-row justify-center w-full mt-10 space-x-10">
       <div class="flex flex-col w-1/2">
         <h1 class="h2 font-semibold">{title}</h1>
         <hr class="w-full !border-2 border-primary-500 mt-3">
@@ -34,11 +34,11 @@
           </a>
         </p>
       </div>
-      <img src={imgGroup} class="w-1/2 object-scale-down" alt="Avatar" />
+      <img src={imgGroup} class="w-1/2 object-scale-down lg:w-1/3" alt="Avatar" />
     </div>
 
-    <div class="flex flex-row items-center w-full space-x-10">
-      <img src={gifEvictions} class="w-1/2 mb-10" alt="Avatar" />
+    <div class="flex flex-row justify-center w-full space-x-10">
+      <img src={gifEvictions} class="w-1/2 mb-10 lg:w-1/3" alt="Avatar" />
       <div class="flex flex-col items-center w-1/2">
         <h2 class="h3 font-semibold mt-10">{titStats}</h2>
         <p class="h5 mx-15 my-5">{aboutStats}</p>

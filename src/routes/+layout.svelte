@@ -8,6 +8,10 @@
 
   import { computePosition, autoUpdate, offset, shift, flip, arrow } from '@floating-ui/dom';
 
+  import { dev } from '$app/environment';
+  import { inject } from '@vercel/analytics';
+ 
+  inject({ mode: dev ? 'development' : 'production' });
 
   import { storePopup } from '@skeletonlabs/skeleton';
   storePopup.set({ computePosition, autoUpdate, offset, shift, flip, arrow });

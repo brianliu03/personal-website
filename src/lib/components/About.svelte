@@ -1,7 +1,7 @@
 <script>
   import { fade, fly } from "svelte/transition";
 
-  export let title = "About me";
+  export let title = "Projects";
   export let intro = "Hello! I'm a student interested in utilizing technology for human good, addressing pressing humanitarian issues, and creating empowering software for all. Outside work, the current housing and climate crises have captured my attention, and I am exploring statistical and computational models to not only chronicle historical events, but also to help uncover potential root causes and solutions.";
   export let titCuriousity = "Curiosity and Exploring Data";
   export let subCuriousity = "My fascination with data-driven insights led me to play with models and analyze intricate datasets. I recently delved into a research project focused on studying evictions in San Francisco and their correlation with financial data. Finding meaningful patterns and hidden truths from the numbers were both challenging and deeply rewarding.";

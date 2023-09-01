@@ -26,7 +26,7 @@ function scrollHandler(event: ComponentEvents<AppShell>['scroll']) {
 </script>
 
 
-<AppShell ... on:scroll={scrollHandler}> 
+<AppShell ... on:scroll={scrollHandler} class="bg-surface-900"> 
 
 	<!-- (header) -->
 	<!-- (sidebarLeft) -->

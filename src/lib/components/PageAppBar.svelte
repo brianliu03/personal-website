@@ -7,7 +7,7 @@
 </script>
 
 
-<AppBar background="bg-surface-700" border="border-b-2 bg-primary-50" padding="px-10 py-4">
+<AppBar background="bg-tertiary-900" border="border-b-2 bg-primary-50" padding="px-10 py-4">
   <svelte:fragment slot="lead">
     <a class="h4 font-semibold" href="/" title="Go to top">
       Brian Liu

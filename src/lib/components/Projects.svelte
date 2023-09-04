@@ -1,6 +1,7 @@
 <script>
   import { fade, fly } from "svelte/transition";
 
+  export let titResearch = "Research";
   export let titProjects = "Projects";
   export let intro = "Hello! I'm a student interested in utilizing technology for human good, addressing pressing humanitarian issues, and creating empowering software for all. Outside work, the current housing and climate crises have captured my attention, and I am exploring statistical and computational models to not only chronicle historical events, but also to help uncover potential root causes and solutions.";
   export let titCuriousity = "Curiosity and Exploring Data";
@@ -15,20 +16,34 @@
 
   export let imgAcadia = "/images/acadia.jpg";
   export let imgMtb = "/images/mtb.JPG";
+  export let imgSF = "/images/groupsf.JPG";
+  export let gifSF = "/images/colored_map_year.gif";
   export let svgHello = "/svg/hello.svg";
   export let svgThink = "/svg/think.svg";
   export let svgDesign = "/svg/design.svg";
   export let svgCollab = "/svg/collab.svg";
 </script>
 
-<div class="flex flex-col place-content-center px-20 bg-secondary-300 text-surface-700" id="about">
+<div class="flex flex-col p-10 gap-10 place-content-center px-20 bg-secondary-300 text-surface-700" id="about">
 
-  <div class="flex flex-col w-full mt-10 lg:mt-20">
-      <h1 class="h2 font-semibold">{titProjects}</h1>
+  <div class="flex flex-col w-full">
+      <h1 class="h2 font-semibold">{titResearch}</h1>
       <hr class="w-full !border-2 border-primary-500 mt-3">
   </div>
 
-  <div class="flex flex-row items-center w-full">
+  <div class="card text-surface-50">
+    <header class="card-header grid grid-cols-2 gap-10 bg-primary-50">
+      <img src={gifSF} class="w-full" alt="Avatar" />
+      <img src={imgSF} class="w-full" alt="Avatar" />
+    </header>
+    <section class="h2 p-4">Housing SF</section>
+    <footer class="card-footer">arst</footer>
+  </div>
+  <div class="card p-4">Basic</div>
+
+  
+
+  <!-- <div class="flex flex-row items-center w-full">
     <div class="flex flex-col items-center w-2/3">
       <h2 class="h3 font-semibold mt-10">{titCuriousity}</h2>
       <p class="h5 mx-15 my-5">{subCuriousity}</p>
@@ -60,7 +75,7 @@
     </div>
   </div>
 
-  <p class="h5 mx-15 my-5 mt-20 mb-5">{bye}</p>
+  <p class="h5 mx-15 my-5 mt-20 mb-5">{bye}</p> -->
 </div>
 
 

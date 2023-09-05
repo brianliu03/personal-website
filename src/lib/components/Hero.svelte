@@ -2,15 +2,18 @@
   import { fade, fly } from "svelte/transition";
   import { onMount } from "svelte";
 
-  export let title = "Welcome, my name is Brian.";
-  export let subtitle = "I am a visiting student at the University of Oxford and a student at Bowdoin College.";
-  export let imageSrc = "/images/hero_portrait.jpg";
-  export let svgHello = "/svg/hello.svg";
-  export let about = "Hello! I am interested in utilizing technology for human good, addressing pressing humanitarian issues, and creating empowering software for all. Below, you can find my research, projects, work experience, and hobbies.";
+  export let welcome = "Welcome, my name is";
+  export let name = "Brian Liu";
+  export let sub = "I like to create software to empower others.";
 
   let visible = false;
 
   // The current housing crisis has captured my attention, and I am exploring statistical models to chronicle historical events and find relationships that explain variation. I am also interested in the intersection of math, music, and creativity. This includes human computer interaction, stochastic processes, and machine learning.
+
+  function scrollIntoView({ target }) {
+    const element = document.querySelector(target);
+    element.scrollIntoView({ behavior: "smooth" });
+  }
 
   onMount(() => {
     visible = true;
@@ -18,60 +21,53 @@
   });
 </script>
 
-<div class="flex flex-col">
-  <div class="flex flex-col sm:flex-row items-center justify-center space-x-16 mx-5 md:mx-10 md:space-x-32">
-    <div class="flex flex-col">
-      {#if visible}
-        <h1 class="h2 lg:h1 mb-10" in:fly="{{ y: 20, duration: 500 }}">
-          {title}
-        </h1>
-      {/if}
-      {#if visible}
-        <h2 class="h4 md:h3" in:fly="{{ y: 250, duration: 1000, delay: 500 }}">
-          {subtitle}
-        </h2>
-      {/if}
-    </div>
-    {#if visible}
-      <img src={imageSrc} class="w-32 sm:w-48 md:w-52 lg:w-72 object-cover rounded-3xl" alt="Avatar" in:fly="{{ y: -250, duration: 1000, delay: 1250 }}"/>
-    {/if}
-  </div>
-
-<div class="flex flex-col place-content-center place-items-center sm:flex-row space-x-5 sm:space-x-10 my-10">
+<div class="flex min-h-screen flex-col -mt-24 justify-center ml-10 space-y-3 scale-75 md:scale-90 lg:scale-100">
   {#if visible}
-    <img src={svgHello} class="w-48 md:w-72" alt="Hello" in:fly="{{ y: -250, duration: 1000, delay: 1250 }}"/>
-    <p class="inline h5 md:h4 sm:w-1/2" in:fly="{{ y: -250, duration: 1000, delay: 1250 }}">
-      {about}
-      Please feel free to
-        <a class="text-primary-500" href="mailto: brianliu03@gmail.com" target="_blank">contact me</a>.
-    </p>
+    <div class="flex space-x-4">
+      <div class="w-32 h-4 bg-gradient-to-r from-purple-300 to-blue-300 z-0" in:fly="{{ x: 100, duration: 750, delay: 1250 }}"/>
+      <div class="w-12 h-4 bg-surface-300 z-0" in:fly="{{ x: 200, duration: 750, delay: 1250 }}"/>
+      <div class="w-5 h-4 rounded-full bg-surface-300 z-0" in:fly="{{ x: 300, duration: 750, delay: 1250 }}"/>
+    </div>
+    <div class="flex space-x-4">
+      <div class="w-48 h-4 bg-gradient-to-r from-primary-500 to-sky-500 z-0" in:fly="{{ x: 100, duration: 750, delay: 1250 }}"/>
+      <div class="w-16 h-4 bg-gradient-to-r from-purple-300 to-blue-300 z-0" in:fly="{{ x: 200, duration: 750, delay: 1250 }}"/>
+    </div>
+    <div class="flex space-x-4">
+      <div class="w-40 h-4 bg-gradient-to-r from-purple-300 to-blue-300 z-0" in:fly="{{ x: 100, duration: 750, delay: 1250 }}"/>
+      <div class="w-16 h-4 bg-surface-300 z-0" in:fly="{{ x: 200, duration: 750, delay: 1250 }}"/>
+      <div class="w-24 h-4 bg-gradient-to-r from-amber-400 to-red-400 z-0" in:fly="{{ x: 300, duration: 750, delay: 1250 }}"/>
+      <div class="w-5 h-4 rounded-full bg-surface-300 z-0" in:fly="{{ x: 400, duration: 750, delay: 1250 }}"/>
+    </div>
+    <div class="ml-16 w-56 h-4 bg-gradient-to-r from-primary-500 to-sky-500 z-0" in:fly="{{ x: 100, duration: 750, delay: 1250 }}"/>
+    <h2 class="h3 lg:h2 ml-5 z-0" in:fly="{{ y: 20, duration: 500 }}">
+      {welcome}
+    </h2>
+    <h1 class="h2 lg:h1 font-semibold ml-5 z-0" in:fly="{{ y: 20, duration: 500 }}">
+      {name}
+    </h1>
+    <h3 class="h4 md:h3 ml-5 z-0" in:fly="{{ y: 250, duration: 1000, delay: 500 }}">
+      {sub}
+    </h3>
+    <button type="button" class="max-w-fit mt-5 btn variant-filled ml-5 z-0" in:fly="{{ y: 250, duration: 1000, delay: 750 }}">See my experience</button>
+    <div class="flex space-x-4">
+      <div class="w-32 h-4 bg-gradient-to-r from-purple-300 to-blue-300 z-0" in:fly="{{ x: 100, duration: 750, delay: 1250 }}"/>
+      <div class="w-12 h-4 bg-surface-300 z-0" in:fly="{{ x: 200, duration: 750, delay: 1250 }}"/>
+      <div class="w-48 h-4 bg-gradient-to-r from-primary-500 to-sky-500 z-0" in:fly="{{ x: 300, duration: 750, delay: 1250 }}"/>
+    </div>
+    <div class="flex space-x-4">
+      <div class="w-64 h-4 bg-gradient-to-r from-amber-400 to-red-400 z-0" in:fly="{{ x: 100, duration: 750, delay: 1250 }}"/>
+      <div class="w-16 h-4 bg-surface-300 z-0" in:fly="{{ x: 200, duration: 750, delay: 1250 }}"/>
+      <div class="w-24 h-4 bg-gradient-to-r from-purple-300 to-blue-300 z-0" in:fly="{{ x: 300, duration: 750, delay: 1250 }}"/>
+      <div class="w-5 h-4 rounded-full bg-surface-300 z-0" in:fly="{{ x: 400, duration: 750, delay: 1250 }}"/>
+    </div>
+    <div class="flex space-x-4">
+      <div class="w-40 h-4 bg-gradient-to-r from-purple-300 to-blue-300 z-0" in:fly="{{ x: 100, duration: 750, delay: 1250 }}"/>
+      <div class="w-16 h-4 bg-surface-300 z-0" in:fly="{{ x: 200, duration: 750, delay: 1250 }}"/>
+      <div class="w-24 h-4 bg-gradient-to-r from-amber-400 to-red-400 z-0" in:fly="{{ x: 300, duration: 750, delay: 1250 }}"/>
+    </div>
+    <div class="flex space-x-4">
+      <div class="w-16 h-4 bg-gradient-to-r from-primary-500 to-sky-500 z-0" in:fly="{{ x: 100, duration: 750, delay: 1250 }}"/>
+      <div class="w-5 h-4 bg-surface-300 z-0" in:fly="{{ x: 200, duration: 750, delay: 1250 }}"/>
+    </div>
   {/if}
 </div>
-
-
-  <footer class="flex sticky bottom-0 justify-center">
-    {#if visible}
-      <a class="btn hover:variant-soft-primary flex-col down-arrow" href="/#about" style="cursor: pointer;" in:fly="{{ y: -500, duration: 1000, delay: 750 }}">
-        <i class="fa-solid fa-chevron-down text-2xl" />
-      </a>
-    {/if}
-    </footer>
-</div>
-
-<style>
-  .down-arrow {
-    animation: bounce 2s infinite;
-  }
-
-  @keyframes bounce {
-    0% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-5px);
-    }
-    100% {
-      transform: translateY(0);
-    }
-  }
-</style>

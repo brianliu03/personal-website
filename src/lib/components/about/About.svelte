@@ -1,9 +1,9 @@
 <script lang="ts">
-
+  import AnimatedSection from "../AnimatedSection.svelte";
   export let imgMe = "/images/portrait.jpg";
 </script>
 
-<section>
+<AnimatedSection decoration="w-16 h-4 bg-gradient-to-r from-purple-300 to-blue-300" title="About Me" id="About">
   <div class="flex flex-col-reverse lg:flex-row">
     <p class="pt-5 h4 text-secondary-100 lg:w-7/12 lg:pr-16 lg:h3">
       Hello! I'm a visiting student at the University of Oxford and a student at Bowdoin College. My interests include computer science, mathematics, finance, and music.
@@ -12,5 +12,5 @@
       <br /> <br />
       Off computers, piano and music are sources of joy for me, and I am challenging myself to prepare for at least one international competition. I also love running and mountain biking to explore outdoors.
     </p>
-    <img src={imgMe} class="flex h-1/4 flex-row justify-center lg:w-5/12 my-9 w-10/12 max-w-md self-center rounded-full drop-shadow-[0.6rem_0.55rem_0px_var(--accent)] transition duration-300 lg:mt-0 lg:hover:drop-shadow-[1.1rem_1.05rem_0px_var(--accent)]" alt="Avatar" />
-</section>
+    <img src={imgMe} class="flex h-1/4 flex-row justify-center w-2/3 lg:w-5/12 my-9 max-w-md self-center rounded-full" alt="Avatar" />
+</AnimatedSection>

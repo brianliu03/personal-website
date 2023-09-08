@@ -8,10 +8,10 @@
 </script>
 
 <div class="flex {reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'}">
-  <div class="flex flex-row justify-center">
+  <div class="flex flex-col justify-center">
     {#each images as image}
       <div class="flex flex-row items-center">
-        <img src={image} class="h-auto w-auto self-center" alt="Work" />
+        <img src={image} class="h-auto w-auto self-center bg-white rounded-lg" alt="Work" />
       </div>
     {/each}
   </div>

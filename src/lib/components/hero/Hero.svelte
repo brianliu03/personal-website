@@ -8,8 +8,6 @@
 
   let visible = false;
 
-  // The current housing crisis has captured my attention, and I am exploring statistical models to chronicle historical events and find relationships that explain variation. I am also interested in the intersection of math, music, and creativity. This includes human computer interaction, stochastic processes, and machine learning.
-
   function goToExperience() {
     const experienceElement = document.getElementById("about");
     if (experienceElement) {
@@ -23,7 +21,7 @@
   });
 </script>
 
-<div class="flex min-h-screen flex-col -mt-24 justify-center ml-24 space-y-3 scale-75 md:scale-90 lg:scale-100">
+<div class="flex min-h-screen flex-col justify-center ml-3 md:ml-32 space-y-3 scale-75 md:scale-90 lg:scale-100">
   {#if visible}
     <div class="flex space-x-4">
       <div class="w-52 h-4 bg-gradient-to-r from-primary-500 to-sky-500 z-0" in:fly="{{ x: 250, duration: 1250, delay: 1250 }}"/>

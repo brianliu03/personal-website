@@ -10,4 +10,5 @@
       <Highlight name={p.name} images={p.images} description={p.description} skills={p.skills} github={p.github} reverse={i % 2 == 1}/>
     {/each}
   </div>
+  <div class="m-32 lg:mx-52"/>
 </AnimatedSection>

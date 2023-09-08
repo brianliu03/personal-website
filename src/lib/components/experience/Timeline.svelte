@@ -45,13 +45,13 @@
       <p class="h2 whitespace-nowrap">
         <span class="text-2xl font-bold text-accent-color">{item.company}</span> <span class="pl-1 text-xl">{item.title}</span>
       </p>
-      <p class="h4 whitespace-nowrap">
+      <p class="h6 whitespace-nowrap py-2">
         {item.startDate} - {item.endDate}
       </p>
       <div class="h4">
         {item.description}
       </div>
-      <div class="flex flex-row space-x-2">
+      <div class="flex flex-row space-x-2 py-2">
         {#each item.skills as skill}
         <div class="whitespace-nowrap badge variant-filled">
           {skill}

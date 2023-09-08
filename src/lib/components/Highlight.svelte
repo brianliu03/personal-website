@@ -8,14 +8,14 @@
 </script>
 
 <div class="flex {reverse ? 'lg:flex-row-reverse' : 'lg:flex-row'}">
-  <div class="flex flex-col justify-center">
+  <div class="flex flex-col items-center justify-center">
     {#each images as image}
-      <div class="flex flex-row items-center">
-        <img src={image} class="h-auto w-auto self-center bg-white rounded-lg" alt="Work" />
+      <div class="flex flex-row">
+        <img src={image} class="h-auto w-auto bg-white rounded-lg my-2" alt="Work" />
       </div>
     {/each}
   </div>
-  <div class="flex flex-col space-y-4 lg:w-1/2 {reverse ? 'text-right lg:mr-28' : 'text-left lg:ml-28'} pt-8 lg:pt-28">
+  <div class="flex flex-col space-y-4 lg:w-1/2 justify-center {reverse ? 'text-right lg:mr-16' : 'text-left lg:ml-16'} pt-8 lg:pt-28">
     <p class="text-2xl font-semibold text-accent-color lg:text-4xl">{name}</p>
     <p class="text-sm lg:text-lg">{description}</p>
     <div class="flex flex-row {reverse ? 'justify-end' : 'justify-start'}">

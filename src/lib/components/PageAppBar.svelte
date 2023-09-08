@@ -15,15 +15,15 @@
   </svelte:fragment>
   <svelte:fragment slot="trail">
     <div class="flex items-center space-x-1 text-primary-300">
-      <a class="btn hover:variant-soft-primary" href="/#about" title="About">
+      <a class="btn hover:variant-soft-primary" href="/" title="About">
         About
       </a>
       <!-- Projects dropdown -->
-      <button class="btn shover:variant-soft-primary" use:popup={{ event: 'click', target: 'features'}}>
-        <span>Projects</span>
-        <i class="fa-solid fa-caret-down opacity-50" />
-      </button>
-      <!-- Projects pop up -->
+      <a class="btn shover:variant-soft-primary" href="/" title="Experience">
+        Experience
+        <!-- <i class="fa-solid fa-caret-down opacity-50" /> -->
+      </a>
+      <!-- Projects pop up
       <div class="card p-2 variant-glass-tertiary w-60" data-popup="features">
         <nav class="list-nav">
           <ul>
@@ -40,7 +40,7 @@
           </ul>
         </nav>
         <div class="arrow variant-glass-tertiary" />
-      </div>
+      </div> -->
       <a class="btn hover:variant-soft-primary" href="/music" title="Music">
         Music
       </a>

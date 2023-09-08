@@ -10,6 +10,7 @@
     title: string;
     description: string;
     img: string;
+    skills: string[];
     showBottomLine: boolean;
   }[] = [];
 
@@ -22,7 +23,7 @@
 
 {#if visible}
   {#each items as item, i}
-  <div class="flex flex-row">
+  <div class="flex flex-row space-x-10">
     <div class="flex flex-col">
       <div id="loading">
         <div class="inner-shadow"/>
@@ -40,15 +41,22 @@
       </div>
       {/if}
     </div>
-    <div class="pt-1 text-left" in:fly="{{ x: 1000, duration: 1000, delay: 1000 * i }}">
+    <div class="text-left" in:fly="{{ x: 1000, duration: 1000, delay: 1000 * i }}">
       <p class="h2 whitespace-nowrap">
         <span class="text-2xl font-bold text-accent-color">{item.company}</span> <span class="pl-1 text-xl">{item.title}</span>
       </p>
       <p class="h4 whitespace-nowrap">
         {item.startDate} - {item.endDate}
       </p>
-        <div class="h4">
+      <div class="h4">
         {item.description}
+      </div>
+      <div class="flex flex-row space-x-2">
+        {#each item.skills as skill}
+        <div class="whitespace-nowrap badge variant-filled">
+          {skill}
+        </div>
+        {/each}
       </div>
     </div>
   </div>

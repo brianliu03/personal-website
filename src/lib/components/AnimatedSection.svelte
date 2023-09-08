@@ -17,7 +17,7 @@
   };
 </script>
 
-<div class="flex items-center justify-center min-h-screen" id={id} use:inview={ options } on:inview_change={ handleChange }>
+<div class="flex items-center justify-center align-middle min-h-screen" id={id} use:inview={ options } on:inview_change={ handleChange }>
   <div class="flex flex-col w-full md:w-2/3 min-h-screen items-center justify-center scale-75 md:scale-90 lg:scale-100">
     {#if visible}
       <div class="flex w-full items-baseline space-x-4">

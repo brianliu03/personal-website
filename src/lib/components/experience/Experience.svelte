@@ -10,5 +10,6 @@
 </script>
 
 <AnimatedSection decoration="w-16 h-4 bg-gradient-to-r from-primary-500 to-sky-500" title="Experience" id="Experience">
-  <Timeline items={timelineItems} />
+  <div class="my-5" />
+  <Timeline items={timelineItems}/>
 </AnimatedSection>

@@ -7,6 +7,7 @@ export const timelineItems = [
     endDate: "Sep 2023",
     title: "Software Engineer Intern",
     description: "Placeholder",
+    skills: ["Kotlin", "Java", "MySQL"],
   },
   {
     img: "/images/mitrelogo.jpg",
@@ -16,5 +17,6 @@ export const timelineItems = [
     endDate: "Aug 2022",
     title: "Software Engineer Intern",
     description: "Placeholder",
+    skills: ["Python", "C++", "Apache Kafka"],
   },
 ];

@@ -33,7 +33,7 @@ function scrollHandler(event: ComponentEvents<AppShell>['scroll']) {
 	<!-- <svelte:fragment slot="sidebarRight"><PageAppBar/></svelte:fragment> -->
 
 	<svelte:fragment slot="pageHeader">
-    <PageAppBar></PageAppBar>
+    <!-- <PageAppBar></PageAppBar> -->
   </svelte:fragment>
 
 	<!-- Router Slot -->

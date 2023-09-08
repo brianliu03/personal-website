@@ -15,11 +15,11 @@
   </svelte:fragment>
   <svelte:fragment slot="trail">
     <div class="flex items-center space-x-1 text-primary-300">
-      <a class="btn hover:variant-soft-primary" href="/" title="About">
+      <a class="btn hover:variant-soft-primary" href="/#about" title="About">
         About
       </a>
       <!-- Projects dropdown -->
-      <a class="btn shover:variant-soft-primary" href="/" title="Experience">
+      <a class="btn shover:variant-soft-primary" href="/#experience" title="Experience">
         Experience
         <!-- <i class="fa-solid fa-caret-down opacity-50" /> -->
       </a>

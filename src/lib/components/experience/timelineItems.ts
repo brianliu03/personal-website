@@ -1,9 +1,6 @@
-import pac from "$app/paths/paclogo.jpg";
-import mitre from "$app/paths/mitrelogo.png"
-
 export const timelineItems = [
   {
-    image: pac,
+    img: "/images/paclogo.jpg",
     showBottomLine: true,
     company: "Panasonic Avionics Corporation",
     startDate: "Jun 2023",
@@ -12,7 +9,7 @@ export const timelineItems = [
     description: "Placeholder",
   },
   {
-    image: mitre,
+    img: "/images/mitrelogo.jpg",
     showBottomLine: false,
     company: "The MITRE Corporation",
     startDate: "Jun 2022",

@@ -26,11 +26,11 @@ function scrollHandler(event: ComponentEvents<AppShell>['scroll']) {
 </script>
 
 
-<AppShell ... on:scroll={scrollHandler}> 
+<AppShell ... on:scroll={scrollHandler} class="bg-surface-700"> 
 
 	<!-- (header) -->
 	<!-- (sidebarLeft) -->
-	<!-- (sidebarRight) -->
+	<!-- <svelte:fragment slot="sidebarRight"><PageAppBar/></svelte:fragment> -->
 
 	<svelte:fragment slot="pageHeader">
     <PageAppBar></PageAppBar>

@@ -9,11 +9,17 @@
   let visible = false;
 
   function goToExperience() {
-    const experienceElement = document.getElementById("about");
-    if (experienceElement) {
-      experienceElement.scrollIntoView({ behavior: "smooth" });
-    }
+  const experienceSection = document.getElementById('Experience');
+  
+  if (experienceSection) {
+    console.log("Scrolling to experience section");
+    console.log("Offset top:", experienceSection.offsetTop);
+    console.log("Experience section:", experienceSection);
+    experienceSection.scrollIntoView({ behavior: 'smooth' });
+  } else {
+    console.log("Experience section not found");
   }
+}
 
   onMount(() => {
     visible = true;

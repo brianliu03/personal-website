@@ -1,5 +1,4 @@
 <script>
-  import { comma } from "postcss/lib/list";
 import AnimatedSection from "../AnimatedSection.svelte";
 </script>
 

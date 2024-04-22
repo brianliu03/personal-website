@@ -21,10 +21,10 @@
   <div class="flex flex-col w-full md:w-2/3 min-h-screen items-center justify-center scale-75 md:scale-90 lg:scale-100">
     {#if visible}
       <div class="flex w-full items-baseline space-x-4">
-        <div class={decoration} in:fly="{{ x: 250, duration: 1000 }}"/>
-        <h1 class="h2 lg:h1 font-semibold ml-12 z-0 text-secondary-400" in:fly="{{ x: 500, duration: 1000 }}">{title}</h1>
+        <div class={decoration} in:fly|global="{{ x: 250, duration: 1000 }}"/>
+        <h1 class="h2 lg:h1 font-semibold ml-12 z-0 text-secondary-400" in:fly|global="{{ x: 500, duration: 1000 }}">{title}</h1>
       </div>
-      <div class="flex flex-col w-full" in:fly="{{ y: 400, duration: 500, delay: 500 }}">
+      <div class="flex flex-col w-full" in:fly|global="{{ y: 400, duration: 500, delay: 500 }}">
         <slot />
       </div>
     {/if}

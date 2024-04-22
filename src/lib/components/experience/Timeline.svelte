@@ -27,21 +27,21 @@
     <div class="flex flex-col">
       <div id="loading">
         <div class="inner-shadow"/>
-        <img src={item.img} alt={item.company} class="inner-shadow" in:fade={{ duration: 1000, delay: 1000 * i }} />
+        <img src={item.img} alt={item.company} class="inner-shadow" in:fade|global={{ duration: 1000, delay: 1000 * i }} />
         <div class="hold left">
-          <div class="fill" in:fade={{ duration: 1000, delay: 1000 * i }} />
+          <div class="fill" in:fade|global={{ duration: 1000, delay: 1000 * i }} />
         </div>
         <div class="hold right">
-          <div class="fill" in:fade={{ duration: 1000, delay: 1000 * i }} />
+          <div class="fill" in:fade|global={{ duration: 1000, delay: 1000 * i }} />
         </div>
       </div>
       {#if item.showBottomLine}
       <div class="lineContainer">
-        <div class="line mx-auto animate-line" in:fade={{ duration: 1000, delay: (1000 * i) + 500 }} />
+        <div class="line mx-auto animate-line" in:fade|global={{ duration: 1000, delay: (1000 * i) + 500 }} />
       </div>
       {/if}
     </div>
-    <div class="text-left" in:fly="{{ x: 1000, duration: 1000, delay: 1000 * i }}">
+    <div class="text-left" in:fly|global="{{ x: 1000, duration: 1000, delay: 1000 * i }}">
       <p class="h2 whitespace-nowrap">
         <span class="text-2xl font-bold text-accent-color">{item.company}</span> <span class="pl-1 text-xl">{item.title}</span>
       </p>

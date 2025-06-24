@@ -8,8 +8,8 @@
 </script>
 
 <Hero />
-<About />
+<!-- <About />
 <Experience />
 <Research />
-<Projects />
-<Contact />
+<Projects /> -->
+<!-- <Contact /> -->

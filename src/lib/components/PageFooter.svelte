@@ -1,4 +1,4 @@
-<script lang='ts'>
+<!-- <script lang='ts'>
   import {
     AppBar,
     AppShell
@@ -32,6 +32,5 @@
           </svelte:fragment>
         </AppBar>
       </svelte:fragment>
-      <!-- ... -->
     </AppShell>
-
+ -->

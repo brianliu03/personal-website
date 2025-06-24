@@ -1,0 +1,9 @@
+{
+	"/": [],
+	"/fractmuse": [],
+	"/housing": [],
+	"/music": [],
+	"/test": [
+		"src/routes/test/+page.server.ts"
+	]
+}

@@ -112,16 +112,16 @@
         {sub}
       </h3>
       <div class="flex py-2 px-6 space-x-6">
-        <a href="https://www.youtube.com/channel/your-channel-id" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.youtube.com/@briliu03" target="_blank" rel="noopener noreferrer">
           <i class="fa-brands fa-youtube text-xl text-surface-50" in:fly={{ y: 250, duration: 1000, delay: 750 }}></i>
         </a>
-        <a href="https://github.com/your-github-username" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/brianliu03" target="_blank" rel="noopener noreferrer">
           <i class="fa-brands fa-github text-xl text-surface-50" in:fly={{ y: 250, duration: 1000, delay: 750 }}></i>
         </a>
-        <a href="https://www.linkedin.com/in/your-linkedin-id" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/brianliu03" target="_blank" rel="noopener noreferrer">
           <i class="fa-brands fa-linkedin text-xl text-surface-50" in:fly={{ y: 250, duration: 1000, delay: 750 }}></i>
         </a>
-        <a href="mailto:your-email@example.com">
+        <a href="mailto:brianliu03@gmail.com">
           <i class="fa-solid fa-envelope text-xl text-surface-50" in:fly={{ y: 250, duration: 1000, delay: 750 }}></i>
         </a>
       </div>
